@@ -16,7 +16,7 @@ const Signin = () => {
     const onSumbit: SubmitHandler<FormInputs> = async (user) => {
         const { data } = await signin(user);
         if (data) {
-            toast.success("Bạn đã đăng nhập thành công, chờ 3s");
+            toast.success("Vui lòng chờ giây lát !");
             setTimeout(() => {
                 navigate('/')
                 localStorage.setItem("user", JSON.stringify(data))
@@ -30,7 +30,7 @@ const Signin = () => {
                 {/* Row */}
                 <div className="w-full xl:w-3/4 lg:w-11/12 flex">
                     {/* Col */}
-                    <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style={{ backgroundImage: 'url("https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-phong-canh-1.jpg")' }} />
+                    <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style={{ backgroundImage: 'url("https://images-na.ssl-images-amazon.com/images/I/91Nrs4VePuL.jpg")' }} />
                     {/* Col */}
                     <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                         <a href="/">
@@ -57,7 +57,7 @@ const Signin = () => {
                             </div>
                             <div className="mt-7">
                                 <button type="submit" className="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
-                                    sign up
+                                    sign in
                                 </button>
                             </div>
                             <div className="flex mt-7 items-center text-center">

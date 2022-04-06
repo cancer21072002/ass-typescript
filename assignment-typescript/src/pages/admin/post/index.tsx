@@ -54,7 +54,7 @@ const PostAdmin = (props: ProductManagerProps) => {
 
                                                             <th> <span className="ml-2">Name</span> </th>
                                                             <th> <span className="ml-2">img</span> </th>
-                                                            <th> <span className="ml-2">Conten</span> </th>
+                                                            <th> <span className="ml-2">Content</span> </th>
 
 
                                                             <th colSpan={2} className=""> <span className="pl-[50px]">Action</span> </th>

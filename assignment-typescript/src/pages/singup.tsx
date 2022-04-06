@@ -18,7 +18,7 @@ const Signup = () => {
     const onSubmit: SubmitHandler<FormInputs> = async (user) => {
         const { data } = await signup(user);
         if (data) {
-            toast.success("Bạn đã đăng ký thành công, chờ 3s");
+            toast.success("Vui lòng chờ giây lát !");
             setTimeout(() => {
                 navigate('/signin')
             }, 3000)
@@ -32,7 +32,7 @@ const Signup = () => {
                     {/* Row */}
                     <div className="w-full xl:w-3/4 lg:w-11/12 flex">
                         {/* Col */}
-                        <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style={{ backgroundImage: 'url("https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-phong-canh-1.jpg")' }} />
+                        <div className="w-2/3 h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style={{ backgroundImage: 'url("https://i.pinimg.com/originals/d6/c0/c4/d6c0c41311ff3d970995cf79ea28b839.jpg")' }} />
                         {/* Col */}
                         <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                             <a href="/signin">

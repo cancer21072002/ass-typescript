@@ -93,7 +93,7 @@ function App() {
     try {
       const { data } = await remove(id);
       if (data) {
-        toast.success("xoa thanh cong");
+        toast.success("Xóa thành công");
       }
     } catch (error: {}) {
       toast.error(error.response.data)
@@ -106,7 +106,7 @@ function App() {
     try {
       const { data } = await add(products);
       if (data) {
-        toast.success("Them thanh cong");
+        toast.success("Thêm thành công");
 
       }
     } catch (error) {
@@ -118,7 +118,7 @@ function App() {
     try {
       const { data } = await update(product);
       if (data) {
-        toast.success("Sua thanh cong");
+        toast.success("Sửa thành công ");
       }
     } catch (error) {
 
@@ -129,7 +129,7 @@ function App() {
     try {
       const { data } = await removebanner(id);
       if (data) {
-        toast.success("xoa thanh cong");
+        toast.success("Xóa thành công");
       }
     } catch (error: {}) {
       toast.error(error.response.data)
@@ -142,8 +142,8 @@ function App() {
     try {
       const { data } = await addCategory(category);
       if (data) {
-        toast.success("Them thanh cong");
-
+        toast.success("Thêm thành công");
+        
       }
     } catch (error) {
 
@@ -154,7 +154,7 @@ function App() {
     try {
       const { data } = await updateCategory(category);
       if (data) {
-        toast.success("Sua thanh cong");
+        toast.success("Sửa thành công");
       }
     } catch (error) {
 
@@ -165,7 +165,7 @@ function App() {
     try {
       const { data } = await removeCategory(id);
       if (data) {
-        toast.success("xoa thanh cong");
+        toast.success("Xóa thành công");
       }
     } catch (error: {}) {
       toast.error(error.response.data)
@@ -178,7 +178,7 @@ function App() {
     try {
       const { data } = await addPost(posts);
       if (data) {
-        toast.success("Them thanh cong");
+        toast.success("Thêm thành công");
 
       }
     } catch (error) {
@@ -190,7 +190,7 @@ function App() {
     try {
       const { data } = await updatePost(posts);
       if (data) {
-        toast.success("Sua thanh cong");
+        toast.success("Sửa thành công");
       }
     } catch (error) {
 
@@ -201,7 +201,7 @@ function App() {
     try {
       const { data } = await removePost(id);
       if (data) {
-        toast.success("xoa thanh cong");
+        toast.success("Xóa thành công");
       }
     } catch (error: {}) {
       toast.error(error.response.data)
@@ -214,7 +214,7 @@ function App() {
     try {
       const { data } = await addusers(user);
       if (data) {
-        toast.success("Them thanh cong");
+        toast.success("Thêm thành công");
 
       }
     } catch (error) {
@@ -226,7 +226,7 @@ function App() {
     try {
       const { data } = await updateusers(user);
       if (data) {
-        toast.success("Sua thanh cong");
+        toast.success("Sửa thành công");
       }
     } catch (error) {
 
@@ -237,7 +237,7 @@ function App() {
     try {
       const { data } = await removeusers(id);
       if (data) {
-        toast.success("xoa thanh cong");
+        toast.success("Xóa thành công");
       }
     } catch (error: {}) {
       toast.error(error.response.data)
