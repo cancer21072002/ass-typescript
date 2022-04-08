@@ -18,6 +18,7 @@ const productSchema = new Schema({
         required: true
     },
     category: {
+        // @ts-ignore
         type: ObjectId,
         ref: "Category"
     }

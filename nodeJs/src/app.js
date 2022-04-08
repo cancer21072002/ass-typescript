@@ -33,7 +33,7 @@ mongoose.connect('mongodb://localhost:27017/assNode')
     .then(() => console.log("Kết nối DB thành công"))
     .catch((error) => console.log(error))
     //connect
-const PORT = 3001;
+const PORT = 8000;
 app.listen(PORT, () => {
     console.log("Server is running port", PORT);
 });

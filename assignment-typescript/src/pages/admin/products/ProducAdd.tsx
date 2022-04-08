@@ -3,6 +3,9 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { ProductType } from '../../../types/Product'
 
+
+
+
 type ProducAddProps = {
 
     onAdd: (product: ProductType) => void
@@ -11,6 +14,7 @@ type FromInput = {
     name: string,
     price: number,
     img: string,
+    category: ObjectId
 
 }
 
@@ -69,6 +73,14 @@ const ProducAdd = (props: ProducAddProps) => {
                                                     <div className="col-span-6 sm:col-span-4 pb-[30px]">
                                                         <label className="block text-sm font-medium text-gray-700">Price</label>
                                                         <input type="number" className="form-control" id="price" {...register('price')} />
+                                                    </div>
+                                                    <div className="col-span-6 sm:col-span-4 py-[30px]">
+                                                        <label className="block text-sm font-medium text-gray-700">Category</label>
+                                                        <select id="cars"> 
+                                                            <option value="volvo" id="img" {...register('category')}></option>
+  
+                                                        </select>
+                                                       
                                                     </div>
                                                     <div className="col-span-6 sm:col-span-4 pb-[30px]">
                                                         <label className="block text-sm font-medium text-gray-700">Image</label>

@@ -40,7 +40,7 @@ const Header = (props: Props) => {
                     </div>
                 </div >
                 <div className="bg-orange-100">
-                    <div className="header-top bg-orange-100 flex justify-between h-[80px] w-[1200px] mx-32">
+                    <div className="header-top bg-orange-100 flex justify-between h-[80px] w-[1200px] ml-52">
                         <div className="nav pt-4">
                             <div>
                                 <button className="bg-red-700 text-white hover:bg-stone-900 ml-[30px] px-[20px] py-[8px] ">Danh Mục</button>
